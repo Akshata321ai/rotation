@@ -1,0 +1,75 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    width:100%;
+    height: 100vh;
+    background-image: url(empty-space-1.png);
+    background-size: cover;
+    background-image: multiply;
+}
+.earth{
+    width: 240px;
+    height: 230px;
+    background-image: url(image3.jpeg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 60%;
+    background-size: cover;
+    box-shadow:-20px -20px 50px 2px #000 inset,0 0 20px 2px #000;
+    animation: spin 22s linear infinite;
+}
+@keyframes spin{
+    0%{
+        background-position: 0%;
+    }
+    100%{background-position: 100%;
+    }
+}
+.orbit{
+    width: 590px;
+    height: 540px;
+    border-width: 20px;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: 464px;
+    margin-top: 85px;
+    position: fixed;
+    animation: rotate-1 90s infinite linear;
+}
+@keyframes rotate-1{
+    100%{
+        transform:translate(0%,0%) rotate(360deg);
+        position: fixed;
+
+    }
+}
+.moon{
+    width: 120px;
+    height: 120px;
+    background-image: url(moon.png);
+    background-position: center;
+    background-size: 200px;
+    border-radius: 80%;
+    margin-top: 52px;
+    position: absolute;
+    background-size: cover;
+    background-blend-mode: multiply;
+    box-shadow:  -5px -5px 30px 2px #000 inset, 0 0 20px 2px #000;
+    animation: rotate 1.5s  alternate-reverse infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+
+}
+@keyframes rotate{
+   
+    100%{
+        background-position: 100%;
+        animation-duration: 1.5s;
+    }
+}
